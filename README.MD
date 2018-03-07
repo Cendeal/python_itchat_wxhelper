@@ -1,12 +1,12 @@
-###1.运行环境
+### 1.运行环境
 + python 3+ [下载地址](https://www.python.org/downloads/)
 + 需要安装itchat
 ```pip install itchat```
-###2.功能设计
+### 2.功能设计
 * 查看群id
 * 查看指定id群的好友
 * 向指定群中所有自己的好友发送信息
-###3.使用方法
+### 3.使用方法
 + 把代码复制粘贴,保存为 `wxhelper.py`
 + 在当前文件目录打开cmd指令窗口输入(windows系统)
 ```python wxhelper.py```
