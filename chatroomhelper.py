@@ -21,7 +21,7 @@ def get_friendsInfo_in_room(chatRoomName,memberlist):
 	for user in memberlist['MemberList']:
 		if (user['ContactFlag']!=0):
 			count+=1
-			print("nickname:%s DisplayName:%s"%(user['NickName'],user['DisplayName']))
+			#print("nickname:%s DisplayName:%s"%(user['NickName'],user['DisplayName']))
 			friendInRoom+="[好友%d]nickname:%s DisplayName:%s 备注:%s\n\n"%(count,user['NickName'],user['DisplayName'],user['RemarkName'])
 	friendInRoom+='该群共有%d好友'%(count)
 	return friendInRoom
@@ -29,7 +29,7 @@ def get_friendsInfo_in_room(chatRoomName,memberlist):
 #获取好友信息
 def get_friendsInfo(memberlist):
 	for user in memberlist['MemberList']:
-			print("nickname:%s DisplayName:%s"%(user['NickName'],user['DisplayName']))
+			#print("nickname:%s DisplayName:%s"%(user['NickName'],user['DisplayName']))
 			friendInRoom+="[好友%d]nickname:%s DisplayName:%s 备注:%s\n\n"%(count,user['NickName'],user['DisplayName'],user['RemarkName'])
 	friendInRoom+='该群共有%d好友'%(len(memberlist))
 
@@ -39,7 +39,7 @@ def send_msg_to_room_friends(title,message,toFriendsList):
 	print(sendmsg)
 	for user in toFriendsList['MemberList']:
 		 if (user['ContactFlag']!=0):
-			 print("sendto=nickname:%s DisplayName:%s"%(user['NickName'],user['DisplayName' ]))
+			 #print("sendto=nickname:%s DisplayName:%s"%(user['NickName'],user['DisplayName' ]))
 			 itchat.send(sendmsg,toUserName=user['UserName'])
 #处理无参数指令
 def cmd_single_deal(cmd):
@@ -71,7 +71,7 @@ def cmd_with_args_deal(command):
 	room_member=itchat.update_chatroom(dict[id]['roomname'],detailedMember=True)
 
 	if((command[0]=='SendMode') and len(command)==2):
-				print(dict[id]['nickname']+'#############')
+				#print('#############%s'%dict[id]['nickname'])
 				friendsInRoomInfo=get_friendsInfo_in_room(dict[id]['nickname'],room_member)
 				itchat.send(friendsInRoomInfo,toUserName='filehelper')      
 	if((command[0]=='SendMode' or command[0]=='1' ) and len(command)==5):
