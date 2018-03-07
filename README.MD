@@ -19,4 +19,5 @@
 3.[SendMode 参数0(群id) text 参数a(标题) 参数b(内容)]
 4.[update]?or?4:更新数据
 5.[help]:帮助信息\n【注意:参数间只能有一个空格】
+![预览效果](http://upload-images.jianshu.io/upload_images/4413333-05c615c0399671a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
 ```
