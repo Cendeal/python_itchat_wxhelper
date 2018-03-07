@@ -17,7 +17,7 @@
 1.[SendMode]:查看群id
 2.[SendMode id]:查看指定id群的好友人数
 3.[SendMode 参数0(群id) text 参数a(标题) 参数b(内容)]
-4.[update]?or?4:更新数据
+4.[update] or 4:更新数据
 5.[help]:帮助信息\n【注意:参数间只能有一个空格】
 
 ```
