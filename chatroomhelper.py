@@ -3,7 +3,7 @@ import itchat
 import time
 from itchat.content import TEXT
 from itchat.content import FRIENDS
-itchat.auto_login(hotReload=True)
+itchat.auto_login(hotReload=True,enableCmdQR=2)
 dict={}
 #返回最新的新字典数据
 def updateRooms():
